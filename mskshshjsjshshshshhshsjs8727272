@@ -4,4 +4,3 @@ local sound = Instance.new("Sound")
 	sound.Parent = workspace
 	sound.Volume = 2
 	sound:Play()
-end
