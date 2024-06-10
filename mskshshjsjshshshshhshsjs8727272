@@ -1,5 +1,4 @@
-entity.Debug.OnDeath = function()
-    local sound = Instance.new("Sound")
+local sound = Instance.new("Sound")
 	sound.SoundId = "rbxassetid://"..3359047385
 	sound.Looped = false
 	sound.Parent = workspace
