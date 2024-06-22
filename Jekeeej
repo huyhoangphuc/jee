@@ -1,0 +1,287 @@
+-- Coems🤑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "If You Found Player Name Prlme_A60 Yeah He Is Owner of Script";
+    Text = "Enjoy"; -- what the text says (ofc)
+    Duration = 20;
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Owner of Script";
+    Text = "Ok"; -- what the text says (ofc)
+    Duration = 20;
+})
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";ball" then
+    for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    if tool:IsA("Tool") then
+         tool.Parent = game:GetService("Players").LocalPlayer.Character -- I didn't use Equip because the Equip function unequips any other tools in your character.
+    end
+end
+    for i = 1, 2 do
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+   if v:IsA("Tool") then
+       v.Parent = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
+       v.GripPos = Vector3.new(1.5, 1.5, -0.7)
+       v.GripForward = Vector3.new(0, -0, 1)
+       v.Handle.Massless = true
+       v.Parent = game.Players.LocalPlayer.Character
+   end
+end
+end
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";goto " then
+    local player
+    for i, plr in ipairs(game.Players:GetPlayers()) do
+    if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
+        player = plr.Name
+    end
+    end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";sit" then
+    loadstring(game:HttpGet("https://pastefy.app/g6vQxFKD/raw"))()
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";cmds" then
+print(";ball : Make Items Become your Balls")
+print("1.;goto Players Name : You Can goto Someone")
+print("1.;car : This Command Give you Free Car Gui")
+print(";Bring all : You Can Bring Everyone And Kill")
+print(";Antifling : Who Can fling you?")
+print(";Ripper : Is Can Spawn Ripper")
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";car" then
+    loadstring(game:HttpGet("https://pastefy.app/m2RDzo1x/raw"))()
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";Ripper" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ripper"))()
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";Bring all" then
+    local localPlayer = game.Players.LocalPlayer
+local localPlayerCF = localPlayer.Character.HumanoidRootPart.CFrame
+
+for _, player in pairs(game.Players:GetPlayers()) do
+    if player ~= localPlayer then
+        player.Character.HumanoidRootPart.CFrame = localPlayerCF
+        player.Character.Humanoid.PlatformStand = true
+        player.Character.Humanoid.WalkSpeed = 0
+        player.Character.Humanoid.JumpPower = 0
+        for _, part in pairs(player.Character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.Anchored = true
+            end
+        end
+    end
+end
+
+localPlayer.Character.HumanoidRootPart.Anchored = false
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == ";Antifling" then
+    -- // Constants \\ --
+-- [ Services ] --
+local Services = setmetatable({}, {__index = function(Self, Index)
+local NewService = game.GetService(game, Index)
+if NewService then
+Self[Index] = NewService
+end
+return NewService
+end})
+
+-- [ LocalPlayer ] --
+local LocalPlayer = Services.Players.LocalPlayer
+
+-- // Functions \\ --
+local function PlayerAdded(Player)
+   local Detected = false
+   local Character;
+   local PrimaryPart;
+
+   local function CharacterAdded(NewCharacter)
+       Character = NewCharacter
+       repeat
+           wait()
+           PrimaryPart = NewCharacter:FindFirstChild("HumanoidRootPart")
+       until PrimaryPart
+       Detected = false
+   end
+
+   CharacterAdded(Player.Character or Player.CharacterAdded:Wait())
+   Player.CharacterAdded:Connect(CharacterAdded)
+   Services.RunService.Heartbeat:Connect(function()
+       if (Character and Character:IsDescendantOf(workspace)) and (PrimaryPart and PrimaryPart:IsDescendantOf(Character)) then
+           if PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 or PrimaryPart.AssemblyLinearVelocity.Magnitude > 100 then
+               if Detected == false then
+                   game.StarterGui:SetCore("ChatMakeSystemMessage", {
+                       Text = "Fling Exploit detected, Player: " .. tostring(Player);
+                       Color = Color3.fromRGB(255, 200, 0);
+                   })
+               end
+               Detected = true
+               for i,v in ipairs(Character:GetDescendants()) do
+                   if v:IsA("BasePart") then
+                       v.CanCollide = false
+                       v.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+                       v.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+                       v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
+                   end
+               end
+               PrimaryPart.CanCollide = false
+               PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+               PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+               PrimaryPart.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
+           end
+       end
+   end)
+end
+
+-- // Event Listeners \\ --
+for i,v in ipairs(Services.Players:GetPlayers()) do
+   if v ~= LocalPlayer then
+       PlayerAdded(v)
+   end
+end
+Services.Players.PlayerAdded:Connect(PlayerAdded)
+
+local LastPosition = nil
+Services.RunService.Heartbeat:Connect(function()
+   pcall(function()
+       local PrimaryPart = LocalPlayer.Character.PrimaryPart
+       if PrimaryPart.AssemblyLinearVelocity.Magnitude > 250 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 250 then
+           PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+           PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+           PrimaryPart.CFrame = LastPosition
+
+           game.StarterGui:SetCore("ChatMakeSystemMessage", {
+               Text = "You were flung. Neutralizing velocity.";
+               Color = Color3.fromRGB(255, 0, 0);
+           })
+       elseif PrimaryPart.AssemblyLinearVelocity.Magnitude < 50 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 then
+           LastPosition = PrimaryPart.CFrame
+       end
+   end)
+end)
+end
+end)
