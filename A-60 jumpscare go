@@ -666,4 +666,3 @@ local mom = {"rbxassetid://192267375", "rbxassetid://1972219024", "rbxassetid://
     game.TweenService:Create(Face, TweenInfo.new(0.2), {Rotation = math.random(-10,10)}):Play()
     task.wait(0.1)
     JumpscareGui:Destroy()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/hghg/main/jshsjhfjcv"))()
