@@ -8,7 +8,7 @@ local entity = Spawner.createEntity({
     Speed = 300, -- Percentage, 100 = default Rush speed
     DelayTime = 5, -- Time before starting cycles (seconds)
     HeightOffset = 1,
-    CanKill = false,
+    CanKill = true,
     NoDieOnCrouching = false,
     NoHiding = false,
     AntiCrucifix = false,
@@ -18,7 +18,7 @@ local entity = Spawner.createEntity({
     BreakLights = false,
     BackwardsMovement = false,
      MovementDeath = {
-        true, -- Turned On?
+        false, -- Turned On?
         '1',  --- '1'= 'Instant Without Being Looked out' | '2' = 'With Being Looked At'
     },
     FlickerLights = {
