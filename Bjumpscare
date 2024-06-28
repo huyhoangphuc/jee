@@ -1,0 +1,5 @@
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid.Health = 90
+wait()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/jee/main/B-60%20hahjja"))()
