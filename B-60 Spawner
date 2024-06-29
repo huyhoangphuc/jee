@@ -2,22 +2,14 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyho
 
 ---====== Create entity ======---
 
-game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 0, 0)
-game.Lighting.MainColorCorrection.Contrast = 1
-local tween = game:GetService("TweenService")
-tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
-local TweenService = game:GetService("TweenService")
-local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 0, 0)})
-TW:Play()
-
 local entity = Spawner.createEntity({
     CustomName = "B-60",
     Model = "rbxassetid:////16975789652", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 300,
-    MoveDelay = 2,
-    HeightOffset = 9,
+    MoveDelay = 3,
+    HeightOffset = 1,
     CanKill = true,
-    KillRange = 100,
+    KillRange = 50,
     SpawnInFront = false,
     ShatterLights = false,
     FlickerLights = {
