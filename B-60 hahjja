@@ -8,7 +8,7 @@ end)()
 --mpj3
 coroutine.wrap(function()
 wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/hghg/main/jshsjhfjcv"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/hghg/main/Hshshjshshshshshshs"))()
 end)()
 --
 
