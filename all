@@ -363,7 +363,6 @@ end)()
 
 --cease
 coroutine.wrap(function()
-while true do
 wait(1)
 local Spawner = loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource'))()
 
