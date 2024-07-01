@@ -1,0 +1,146 @@
+--ohaja
+coroutine.wrap(function()
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 95
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 95 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 90
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 90 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 85
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 85 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 80
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 80 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 75
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 75 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 70
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 70 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 65
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 65 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 60
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 60 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 55
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 55 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 50
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 50 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 45
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 45 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 40
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 40 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 35
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 35 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 30
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 30 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 25
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 25 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 20
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 20 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 15
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 15 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 10
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 10 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.Health = 5
+wait() 
+if game.Players.LocalPlayer.Character.Humanoid.Health == 5 then
+wait()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5) 
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end)() 
+--
