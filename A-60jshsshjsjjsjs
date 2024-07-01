@@ -12,13 +12,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/hghg/mai
 end)()
 --
 
---mj4
-coroutine.wrap(function()
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/Jsi/main/README.md"))()
-end)()
---
-
 --mj2
 coroutine.wrap(function()
 wait(1)
